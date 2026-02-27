@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service · 服务条款 — Clawup</title>
+    <style>
+        :root {
+            --bg: #fafaf9;
+            --surface: #ffffff;
+            --border: #e8e5e1;
+            --text-primary: #1a1a18;
+            --text-secondary: #6b6b63;
+            --text-muted: #9b9b93;
+            --accent: #c0392b;
+            --radius: 12px;
+            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text-primary);
+            font-family: var(--font);
+            font-size: 15px;
+            line-height: 1.7;
+            padding: 40px 20px 80px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .lang-btn {
+            padding: 6px 18px;
+            border: 1.5px solid var(--border);
+            border-radius: 99px;
+            background: none;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: all 0.15s;
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 16px;
+        }
+
+        .section h2 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .section p,
+        .section li {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .section ul li {
+            margin-bottom: 4px;
+        }
+
+        .section a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .doc-title {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+
+        .update-date {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 32px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Claw<span>up</span></div>
+            <p>Terms of Service · 服务条款</p>
+        </div>
+
+        <div class="lang-toggle">
+            <button class="lang-btn active" onclick="switchLang('en')">English</button>
+            <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+        </div>
+
+        <!-- English -->
+        <div class="lang-content active" id="lang-en">
+            <div class="doc-title">Terms of Service</div>
+            <div class="update-date">Last updated: February 27, 2026</div>
+
+            <div class="section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By downloading or using Clawup ("the App"), you agree to be bound by these Terms of Service. If you
+                    do not agree to these terms, please do not use the App.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Description of Service</h2>
+                <p>Clawup is a companion mobile application that allows you to remotely send instructions to your own
+                    locally-running OpenClaw instance via a relay server. The App does not provide AI services directly
+                    — it acts as a remote interface to your own configured environment.</p>
+                <p>Clawup is independently developed and is not affiliated with the open-source OpenClaw project.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. User Responsibilities</h2>
+                <p>You are solely responsible for:</p>
+                <ul>
+                    <li>The relay server you configure and its security credentials.</li>
+                    <li>All instructions sent to your OpenClaw instance through the App.</li>
+                    <li>Ensuring your use of OpenClaw and any AI services it connects to complies with their respective
+                        terms of service.</li>
+                    <li>Any actions taken by your OpenClaw instance as a result of instructions sent via this App.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Prohibited Use</h2>
+                <p>You agree not to use the App to:</p>
+                <ul>
+                    <li>Violate any applicable laws or regulations.</li>
+                    <li>Send instructions that could cause harm to yourself or others.</li>
+                    <li>Attempt to gain unauthorized access to any systems or data.</li>
+                    <li>Interfere with or disrupt the App or its related infrastructure.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Intellectual Property</h2>
+                <p>The App and its original content, features, and functionality are owned by Clawup and are protected
+                    by applicable intellectual property laws. You may not copy, modify, distribute, or create derivative
+                    works without our prior written consent.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Disclaimer of Warranties</h2>
+                <p>The App is provided on an "as is" and "as available" basis without warranties of any kind, either
+                    express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of
+                    viruses or other harmful components.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, Clawup shall not be liable for any indirect, incidental,
+                    special, consequential, or punitive damages, including but not limited to loss of data or
+                    unauthorized access to your systems, arising from your use of the App.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Changes to Terms</h2>
+                <p>We reserve the right to modify these terms at any time. We will notify you of significant changes by
+                    updating the date at the top of this page. Continued use of the App after changes constitutes
+                    acceptance of the new terms.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to
+                    conflict of law provisions.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Contact Us</h2>
+                <p>If you have questions about these Terms, please contact us at:<br>
+                    <a href="mailto:support@clawup.app">support@clawup.app</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Chinese -->
+        <div class="lang-content" id="lang-zh">
+            <div class="doc-title">服务条款</div>
+            <div class="update-date">最后更新：2026 年 2 月 27 日</div>
+
+            <div class="section">
+                <h2>1. 接受条款</h2>
+                <p>下载或使用 Clawup（以下简称"本应用"）即表示您同意受本服务条款的约束。如您不同意这些条款，请勿使用本应用。</p>
+            </div>
+
+            <div class="section">
+                <h2>2. 服务描述</h2>
+                <p>Clawup 是一款配套移动应用，允许您通过 Relay 服务器向您本地运行的 OpenClaw 实例远程发送指令。本应用本身不直接提供 AI 服务，它作为您自有环境的远程操作界面。</p>
+                <p>Clawup 为独立开发项目，与开源项目 OpenClaw 没有直接关联。</p>
+            </div>
+
+            <div class="section">
+                <h2>3. 用户责任</h2>
+                <p>您对以下事项负全部责任：</p>
+                <ul>
+                    <li>您配置的 Relay 服务器及其安全凭证。</li>
+                    <li>通过本应用发送给您的 OpenClaw 实例的所有指令。</li>
+                    <li>确保您使用 OpenClaw 及其所连接的任何 AI 服务符合各自的服务条款。</li>
+                    <li>您的 OpenClaw 实例因通过本应用发送的指令而执行的任何操作。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. 禁止行为</h2>
+                <p>您同意不使用本应用从事以下活动：</p>
+                <ul>
+                    <li>违反任何适用的法律或法规。</li>
+                    <li>发送可能对您自己或他人造成伤害的指令。</li>
+                    <li>尝试未经授权访问任何系统或数据。</li>
+                    <li>干扰或破坏本应用或其相关基础设施。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. 知识产权</h2>
+                <p>本应用及其原创内容、功能均归 Clawup 所有，受适用知识产权法律保护。未经我们事先书面同意，您不得复制、修改、分发或创作衍生作品。</p>
+            </div>
+
+            <div class="section">
+                <h2>6. 免责声明</h2>
+                <p>本应用按"现状"和"可用"基础提供，不附带任何明示或暗示的担保。我们不保证本应用不间断运行、无错误或不含病毒及其他有害组件。</p>
+            </div>
+
+            <div class="section">
+                <h2>7. 责任限制</h2>
+                <p>在法律允许的最大范围内，Clawup 对因您使用本应用而产生的任何间接、附带、特殊、衍生或惩罚性损害不承担责任，包括但不限于数据丢失或系统被未经授权访问。</p>
+            </div>
+
+            <div class="section">
+                <h2>8. 条款变更</h2>
+                <p>我们保留随时修改本条款的权利。重大变更时，我们将更新页面顶部的日期。继续使用本应用即表示您接受更新后的条款。</p>
+            </div>
+
+            <div class="section">
+                <h2>9. 适用法律</h2>
+                <p>本条款受适用法律管辖并依其解释，不考虑法律冲突条款。</p>
+            </div>
+
+            <div class="section">
+                <h2>10. 联系我们</h2>
+                <p>如您对本条款有任何疑问，请联系我们：<br>
+                    <a href="mailto:support@clawup.app">support@clawup.app</a>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Clawup. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
